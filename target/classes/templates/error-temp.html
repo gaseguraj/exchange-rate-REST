@@ -1,0 +1,12 @@
+<html>
+<body>
+<center>
+<h1>Error occurred</h1>
+<h2>Please contact website admin</h2>
+<a href="/">Home</a>
+</center>
+<p th:if="${#fields.hasErrors('source')}">Not a valid currency</p>
+<p th:if="${#fields.hasErrors('target')}">Not a valid currency</p>
+<p th:if="${#fields.hasErrors('amount')}">Not a valid amount</p>
+</body>
+</html>
